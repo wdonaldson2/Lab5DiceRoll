@@ -19,34 +19,33 @@ public class Lab5DiceGame {
         System.out.println();
 
         System.out.println("Roll 1: ");
-        //This is where you want to add method eachRoll, fyi you are adding an int
-        //The last part of the assignment isn't complete yet, will complete later on
-        // System.out.println(eachRoll());
+
+
+        System.out.println(eachRoll(2, 5) );
+        System.out.println("Roll again? (Y/N): ...");
+        scan.next();
+
     }
 
     public static int eachRoll(int number, int numSides) {
+
         int num = 0;
         int roll = 0;
 
         Random r = new Random();
         if (numSides >= 2) {
-            for (int i = 0; i < number; i++) {
+
+            for (int i = 1; i < number; i++) {
                 roll = r.nextInt(numSides) + 1;
+                System.out.println(roll);
 
-                num = num + roll;
-
-                //return num;
             }
-
         }
-        return num;
+        return number;
+    }
     }
 
-}
-
-        //int num = 0;
-        // int roll = 0;
-
+        //Math.random formula
         //String n = (Math.random() * 2 + 1));
 
 
